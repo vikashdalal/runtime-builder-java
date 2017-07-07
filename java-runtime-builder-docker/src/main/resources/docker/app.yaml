@@ -1,3 +1,7 @@
 runtime: custom
 env: standard
 service: devjavacontainerapp
+
+handlers:
+- url: /.*
+  script: this field is required, but ignored
