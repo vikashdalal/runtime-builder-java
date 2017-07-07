@@ -13,6 +13,6 @@ RUN unzip -qq gradle-$GRADLE_VERSION-bin.zip \
 ENV GRADLE_HOME /usr/share/gradle-$GRADLE_VERSION
 
 # add the runtime builder application
-ADD java-runtime-builder.jar /java-runtime-builder.jar
+ADD ${runtime.builder.artifact} /${runtime.builder.artifact}
 
-ENTRYPOINT ["java", "-jar", "java-runtime-builder.jar"]
+ENTRYPOINT ["java", "-jar", "/${runtime.builder.artifact}"]
