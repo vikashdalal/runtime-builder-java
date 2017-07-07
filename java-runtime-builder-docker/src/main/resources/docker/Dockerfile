@@ -15,4 +15,4 @@ ENV GRADLE_HOME /usr/share/gradle-$GRADLE_VERSION
 # add the runtime builder application
 ADD java-runtime-builder.jar /java-runtime-builder.jar
 
-ENTRYPOINT ["java", "-jar", "/java-runtime-builder.jar"]
+ENTRYPOINT ["java", "-jar", "java-runtime-builder.jar"]
